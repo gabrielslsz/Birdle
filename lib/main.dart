@@ -16,20 +16,15 @@ class Tile extends StatelessWidget {
     return Container(
       width: 60,
       height: 60,
-      decoration: BoxDecoration(border: Border.all(color: Colors.grey.shade300),
-      
-      color: switch (hitType) {
+      decoration: BoxDecoration(
+        border: Border.all(color: Colors.grey.shade300),
+
+        color: switch (hitType) {
           HitType.hit => Colors.green,
           HitType.partial => Colors.yellow,
           HitType.miss => Colors.grey,
           _ => Colors.white,
         },
-      ),
-      child: Center(
-        child: Text(
-          letter.toUpperCase(),
-          style: Theme.of(context).textTheme.titleLarge,
-        ),
       ),
     );
   }
@@ -46,11 +41,11 @@ class GamePage extends StatelessWidget {
       child: Column(
         spacing: 5.0,
         children: [
-          for (final guess in _game.guesses)
+          for (var guess in _game.guesses)
             Row(
               spacing: 5.0,
               children: [
-                for (final letter in guess) Tile(letter.char, letter.type),
+                for (var letter in guess) Tile(letter.char, letter.type),
               ],
             ),
         ],
@@ -59,23 +54,13 @@ class GamePage extends StatelessWidget {
   }
 }
 
-
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Align(
-            alignment: Alignment.centerLeft,
-            child: Text('Birdle'),
-          ),
-        ),
-        body: Center(child: GamePage()), 
-      ),
+      home: Scaffold(body: Center(child: GamePage())),
     );
   }
 }
-
