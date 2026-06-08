@@ -101,9 +101,9 @@ class Tile extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         border: Border.all(color: Colors.pink.shade100, width: 2),
         color: switch (hitType) {
-          HitType.hit => Colors.pink.shade400,
-          HitType.partial => Colors.purple.shade200,
-          HitType.miss => Colors.grey.shade400,
+          HitType.hit => Colors.green, // Verde para acerto total
+          HitType.partial => Colors.yellow, // Amarelo para "perto"
+          HitType.miss => Colors.red, // Vermelho para erro
           _ => Colors.white.withOpacity(0.9),
         },
         boxShadow: [
@@ -149,7 +149,7 @@ class _GamePageState extends State<GamePage> {
         SnackBar(
           backgroundColor: Colors.pink.shade400,
           content: const Text(
-            'A palavra deve ter 5 letras e ser válida.',
+            'A palavra deve ter exatamente 5 letras.',
             style: TextStyle(color: Colors.white),
           ),
         ),
@@ -178,12 +178,11 @@ class _GamePageState extends State<GamePage> {
                 SizedBox(width: 10),
                 Text(
                   'birdle',
-
                   style: TextStyle(
-                    fontSize: 40,
+                    fontSize: 48,
                     fontWeight: FontWeight.bold,
                     color: Colors.pink.shade400,
-                    letterSpacing: 2,
+                    letterSpacing: 4,
                   ),
                 ),
                 SizedBox(width: 10),
