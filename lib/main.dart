@@ -178,6 +178,7 @@ class _GamePageState extends State<GamePage> {
                 SizedBox(width: 10),
                 Text(
                   'birdle',
+
                   style: TextStyle(
                     fontSize: 40,
                     fontWeight: FontWeight.bold,
