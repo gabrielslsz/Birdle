@@ -32,6 +32,11 @@ const List<String> allLegalGuesses = [...legalWords, ...legalGuesses];
 
 /// Words that can be chosen as the hidden word.
 const List<String> legalWords = [
+  'linda',
+  'amada',
+  'meiga',
+  'justa',
+  'unica',
   'peixe',
   'copos',
   'calca',
@@ -51,6 +56,11 @@ const List<String> legalWords = [
 
 /// Additional words accepted as guesses beyond those in [legalWords].
 const List<String> legalGuesses = [
+  'linda',
+  'amada',
+  'meiga',
+  'justa',
+  'unica',
   'peixe',
   'copos',
   'calca',
