@@ -28,33 +28,44 @@ class GuessInput extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: TextField(
-              maxLength: 5,
-              focusNode: _focusNode,
-              autofocus: true,
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(35)),
+    return Center(
+      child: SizedBox(
+        width: 300,
+        child: Row(
+          children: [
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextField(
+                  maxLength: 5,
+                  focusNode: _focusNode,
+                  autofocus: true,
+                  decoration: const InputDecoration(
+                    isDense: true,
+                    contentPadding: EdgeInsets.symmetric(
+                      horizontal: 20,
+                      vertical: 12,
+                    ),
+                    counterText: '',
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(35)),
+                    ),
+                  ),
+                  controller: _textEditingController,
+                  onSubmitted: (value) {
+                    _onSubmit();
+                  },
                 ),
               ),
-              controller: _textEditingController,
-              onSubmitted: (value) {
-                _onSubmit();
-              },
             ),
-          ),
+            IconButton(
+              padding: EdgeInsets.zero,
+              icon: const Icon(Icons.arrow_circle_up),
+              onPressed: _onSubmit,
+            ),
+          ],
         ),
-        IconButton(
-          padding: EdgeInsets.zero,
-          icon: const Icon(Icons.arrow_circle_up),
-          onPressed: _onSubmit,
-        ),
-      ],
+      ),
     );
   }
 }
@@ -123,6 +134,7 @@ class _GamePageState extends State<GamePage> {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           for (var guess in _game.guesses)
             Row(
@@ -151,7 +163,9 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(body: Center(child: GamePage())),
+      home: Scaffold(
+        body: SafeArea(child: Center(child: GamePage())),
+      ),
     );
   }
 }
