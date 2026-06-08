@@ -118,7 +118,7 @@ class _GamePageState extends State<GamePage> {
     if (!_game.isLegalGuess(normalizedGuess)) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text('Palavra inválida. Tente outra de 5 letras.'),
+          content: Text('A palavra deve ter 5 letras e ser válida.'),
         ),
       );
       return;

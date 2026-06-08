@@ -31,10 +31,62 @@ typedef Letter = ({String char, HitType type});
 const List<String> allLegalGuesses = [...legalWords, ...legalGuesses];
 
 /// Words that can be chosen as the hidden word.
-const List<String> legalWords = ['peixe', 'copos', 'calça', 'harry', 'armas'];
+const List<String> legalWords = [
+  'peixe',
+  'copos',
+  'calca',
+  'harry',
+  'armas',
+  'livro',
+  'porta',
+  'noite',
+  'chuva',
+  'campo',
+  'pedra',
+  'festa',
+  'vento',
+  'carro',
+  'folha',
+];
 
 /// Additional words accepted as guesses beyond those in [legalWords].
-const List<String> legalGuesses = ['peixe', 'copos', 'calça', 'harry', 'armas'];
+const List<String> legalGuesses = [
+  'peixe',
+  'copos',
+  'calca',
+  'harry',
+  'armas',
+  'livro',
+  'porta',
+  'noite',
+  'chuva',
+  'campo',
+  'pedra',
+  'festa',
+  'vento',
+  'carro',
+  'folha',
+  'balao',
+  'claro',
+  'dedos',
+  'exame',
+  'falar',
+  'gelos',
+  'horas',
+  'idade',
+  'jogos',
+  'limpo',
+  'menta',
+  'nuvem',
+  'olhos',
+  'ponto',
+  'quais',
+  'radio',
+  'sonho',
+  'terra',
+  'unico',
+  'velho',
+];
 
 /// Game state of a single round of Birdle,
 /// a five-letter word-guessing game similar to Wordle.
