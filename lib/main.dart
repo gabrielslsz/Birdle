@@ -40,15 +40,29 @@ class GuessInput extends StatelessWidget {
                   maxLength: 5,
                   focusNode: _focusNode,
                   autofocus: true,
-                  decoration: const InputDecoration(
+                  style: TextStyle(
+                    color: Colors.pink.shade900,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  decoration: InputDecoration(
                     isDense: true,
-                    contentPadding: EdgeInsets.symmetric(
+                    fillColor: Colors.white.withOpacity(0.8),
+                    filled: true,
+                    contentPadding: const EdgeInsets.symmetric(
                       horizontal: 20,
                       vertical: 12,
                     ),
                     counterText: '',
-                    border: OutlineInputBorder(
+                    enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(35)),
+                      borderSide: BorderSide(color: Colors.pink.shade200),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(35)),
+                      borderSide: BorderSide(
+                        color: Colors.pink.shade400,
+                        width: 2,
+                      ),
                     ),
                   ),
                   controller: _textEditingController,
@@ -60,7 +74,7 @@ class GuessInput extends StatelessWidget {
             ),
             IconButton(
               padding: EdgeInsets.zero,
-              icon: const Icon(Icons.arrow_circle_up),
+              icon: Icon(Icons.favorite, color: Colors.pink.shade400, size: 30),
               onPressed: _onSubmit,
             ),
           ],
@@ -79,23 +93,38 @@ class Tile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AnimatedContainer(
-      duration: Duration(milliseconds: 500),
-      curve: Curves.bounceIn, // NEW
+      duration: const Duration(milliseconds: 500),
+      curve: Curves.bounceIn,
       height: 60,
       width: 60,
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.grey.shade300),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: Colors.pink.shade100, width: 2),
         color: switch (hitType) {
-          HitType.hit => Colors.green,
-          HitType.partial => Colors.yellow,
-          HitType.miss => Colors.grey,
-          _ => Colors.white,
+          HitType.hit => Colors.pink.shade400,
+          HitType.partial => Colors.purple.shade200,
+          HitType.miss => Colors.grey.shade400,
+          _ => Colors.white.withOpacity(0.9),
         },
+        boxShadow: [
+          if (hitType != HitType.none)
+            BoxShadow(
+              color: Colors.black12,
+              blurRadius: 4,
+              offset: const Offset(2, 2),
+            ),
+        ],
       ),
       child: Center(
         child: Text(
           letter.toUpperCase(),
-          style: Theme.of(context).textTheme.titleLarge,
+          style: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+            color: hitType == HitType.none
+                ? Colors.pink.shade900
+                : Colors.white,
+          ),
         ),
       ),
     );
@@ -117,8 +146,12 @@ class _GamePageState extends State<GamePage> {
 
     if (!_game.isLegalGuess(normalizedGuess)) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('A palavra deve ter 5 letras e ser válida.'),
+        SnackBar(
+          backgroundColor: Colors.pink.shade400,
+          content: const Text(
+            'A palavra deve ter 5 letras e ser válida.',
+            style: TextStyle(color: Colors.white),
+          ),
         ),
       );
       return;
@@ -136,6 +169,27 @@ class _GamePageState extends State<GamePage> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          Padding(
+            padding: const EdgeInsets.only(bottom: 30.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(Icons.favorite, color: Colors.pink, size: 40),
+                SizedBox(width: 10),
+                Text(
+                  'JOGO DO AMOR',
+                  style: TextStyle(
+                    fontSize: 40,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.pink.shade400,
+                    letterSpacing: 2,
+                  ),
+                ),
+                SizedBox(width: 10),
+                Icon(Icons.favorite, color: Colors.pink, size: 40),
+              ],
+            ),
+          ),
           for (var guess in _game.guesses)
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -150,7 +204,22 @@ class _GamePageState extends State<GamePage> {
                   ),
               ],
             ),
+          const SizedBox(height: 20),
           GuessInput(onSubmitGuess: _submitGuess),
+          const SizedBox(height: 30),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 40.0),
+            child: Text(
+              'Dica: Tente palavras de 5 letras com as qualidades que eu mais amo em você! ❤️',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 16,
+                fontStyle: FontStyle.italic,
+                color: Colors.pink.shade700,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
         ],
       ),
     );
@@ -163,8 +232,19 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(primarySwatch: Colors.pink),
       home: Scaffold(
-        body: SafeArea(child: Center(child: GamePage())),
+        body: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [Colors.pink.shade50, Colors.white],
+            ),
+          ),
+          child: SafeArea(child: Center(child: GamePage())),
+        ),
       ),
     );
   }
