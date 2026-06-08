@@ -37985,7 +37985,7 @@ A.Au.prototype={
 a9u(a){var s=null,r=B.d.iU(a).toLowerCase()
 if(!B.b.v(B.Fq,A.akS(r).k(0))){this.c.av(t.Pu).f.UD(A.apE(s,s,s,B.cO,s,B.af,s,B.QY,s,B.Cd,s,s,s,s,s,s,s,s,s,s))
 return}this.ak(new A.abS(this,r))},
-N(a){var s,r,q,p,o,n,m=null,l=t.J,k=A.d([new A.cF(B.Cq,A.Iq(A.d([A.YP(B.jo,B.jO,m,40),A.h_(m,m,10),A.jH("JOGO DO AMOR",m,m,m,A.eA(m,m,B.cO,m,m,m,m,m,m,m,m,40,m,m,B.bW,m,m,!0,m,2,m,m,m,m,m,m),m,m),A.h_(m,m,10),A.YP(B.jo,B.jO,m,40)],l),B.fT),m)],l)
+N(a){var s,r,q,p,o,n,m=null,l=t.J,k=A.d([new A.cF(B.Cq,A.Iq(A.d([A.YP(B.jo,B.jO,m,40),A.h_(m,m,10),A.jH("birdle",m,m,m,A.eA(m,m,B.cO,m,m,m,m,m,m,m,m,40,m,m,B.bW,m,m,!0,m,2,m,m,m,m,m,m),m,m),A.h_(m,m,10),A.YP(B.jo,B.jO,m,40)],l),B.fT),m)],l)
 for(s=t.G6,r=new A.or(this.d.d,s),r=new A.bg(r,r.gE(0),s.j("bg<aB.E>")),s=s.j("aB.E");r.q();){q=r.d
 if(q==null)q=s.a(q)
 p=A.d([],l)
