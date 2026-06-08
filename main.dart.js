@@ -10236,8 +10236,8 @@ break
 case 4:s=l.a
 s===$&&A.a()
 s=A.b9(s,200)
-r=A.b9(A.Vx(l,B.n0,B.Eo),24)
-q=A.b9(A.Vx(l,B.n0,B.EU),32)
+r=A.b9(A.Vx(l,B.n0,B.Ep),24)
+q=A.b9(A.Vx(l,B.n0,B.EV),32)
 p=A.b9(l.a,10)
 o=A.b9(l.a,12)
 l.d===$&&A.a()
@@ -10247,8 +10247,8 @@ break
 case 5:s=l.a
 s===$&&A.a()
 s=A.b9(A.wx(s+240),40)
-r=A.b9(A.Vx(l,B.n2,B.Fq),24)
-q=A.b9(A.Vx(l,B.n2,B.Fr),32)
+r=A.b9(A.Vx(l,B.n2,B.Fr),24)
+q=A.b9(A.Vx(l,B.n2,B.Fs),32)
 p=A.b9(l.a+15,8)
 o=A.b9(l.a+15,12)
 l.d===$&&A.a()
@@ -17334,7 +17334,7 @@ r.toString
 A.dV(r)
 q=a.h(0,"swipeEdge")
 q.toString
-return new A.kX(s,r,B.EG[A.dU(q)])},
+return new A.kX(s,r,B.EH[A.dU(q)])},
 yy:function yy(a,b){this.a=a
 this.b=b},
 kX:function kX(a,b,c){this.a=a
@@ -19385,7 +19385,7 @@ if(a.as!==q)return q?-1:1
 return 0},
 awC(a,b){var s=A.Z(b).j("a4<1,cQ>")
 s=A.a_(new A.a4(b,new A.Wq(),s),s.j("am.E"))
-return A.aw4(!0,s,a,B.Fc,!0,B.C6,null)},
+return A.aw4(!0,s,a,B.Fd,!0,B.C6,null)},
 ajk(a){var s
 try{a.dk()}catch(s){a.Jm()}a.w=B.SZ
 try{a.b1(A.aEp())}catch(s){}},
@@ -19918,7 +19918,7 @@ _.as=!0
 _.at=!1
 _.$ti=d},
 ajD(a,b){var s
-if(a.i(0,b))return new A.Ee(B.F2)
+if(a.i(0,b))return new A.Ee(B.F3)
 s=A.d([],t.fJ)
 A.bS()
 a.n7(new A.YG(b,A.aE(t.u),s))
@@ -23394,7 +23394,7 @@ Ym(a){var s=a/100
 return(s<=0.0031308?s*12.92:1.055*Math.pow(s,0.4166666666666667)-0.055)*255},
 ajx(a){var s=Math.pow(Math.abs(a),0.42)
 return A.ng(a)*400*s/(s+27.13)},
-ajy(a){var s=A.kM(a,B.Fp),r=A.ajx(s[0]),q=A.ajx(s[1]),p=A.ajx(s[2])
+ajy(a){var s=A.kM(a,B.Fq),r=A.ajx(s[0]),q=A.ajx(s[1]),p=A.ajx(s[2])
 return Math.atan2((r+q-2*p)/9,(11*r+-12*q+p)/11)},
 axg(a,b){var s,r,q,p,o,n=B.j.bt(b,4)<=1?0:100,m=(b&1)===0?0:100
 if(b<4){s=(a-n*0.7152-m*0.0722)/0.2126
@@ -24430,7 +24430,7 @@ rW(){var s=this.Q
 s===$&&A.a()
 return s},
 rX(a,b,c,d){var s,r,q,p
-if(a<0||b<0)return B.Fb
+if(a<0||b<0)return B.Fc
 s=this.a
 s===$&&A.a()
 s=s.a
@@ -24449,7 +24449,7 @@ l.push(new A.dl(n[0],n[1],n[2],n[3],B.js[m]))}return l},
 cq(a){var s,r,q=this.a
 q===$&&A.a()
 s=q.a.getGlyphPositionAtCoordinate(a.a,a.b)
-r=B.EI[J.av(s.affinity.value)]
+r=B.EJ[J.av(s.affinity.value)]
 return new A.a2(J.av(s.pos),r)},
 FZ(a){var s=this.a
 s===$&&A.a()
@@ -24935,7 +24935,7 @@ A.mg.prototype={
 G(){return"CanvasKitVariant."+this.b}}
 A.Xc.prototype={
 gl5(){var s=this.b,r=s==null?null:s.canvasKitVariant
-return A.awM(B.EP,r==null?"auto":r)},
+return A.awM(B.ER,r==null?"auto":r)},
 gCR(){var s,r=this.b
 if(r==null)s=null
 else{r=r.canvasKitMaximumSurfaces
@@ -26531,7 +26531,7 @@ if(e.b){q=t.f
 d=q.a(q.a(B.bv.fe(a2)).h(0,"data"))
 c=A.cg(d.h(0,"message"))
 if(c!=null&&c.length!==0){b=A.ajH(d,"assertiveness")
-e.a.Ox(c,B.El[b==null?0:b])}}a.eq(a3,B.bv.by(!0))
+e.a.Ox(c,B.Em[b==null?0:b])}}a.eq(a3,B.bv.by(!0))
 return
 case"flutter/navigation":q=a.gcf().b
 p=t.e8
@@ -29375,7 +29375,7 @@ if(m.f!==B.mL){m.f=B.mL
 m.L7()}}return m.d.a.Ul(a)},
 L7(){var s,r
 for(s=this.w,r=0;r<s.length;++r)s[r].$1(this.f)},
-Uk(a){if(B.b.v(B.EX,a))return this.f===B.fB
+Uk(a){if(B.b.v(B.EY,a))return this.f===B.fB
 return!1}}
 A.WV.prototype={
 $0(){return new A.kj(Date.now(),0,!1)},
@@ -30945,7 +30945,7 @@ o=A.dU(s.h(0,"textAlignIndex"))
 n=A.dU(s.h(0,"textDirectionIndex"))
 m=A.f3(s.h(0,"fontWeightIndex"))
 l=m!=null?A.ale(m):"normal"
-p=new A.a7w(new A.Wm(A.YX(s,"fontSize"),l,A.cg(s.h(0,"fontFamily")),B.Ej[o],B.js[n],A.YX(s,"letterSpacing"),A.YX(s,"wordSpacing"),A.YX(s,"lineHeight")))
+p=new A.a7w(new A.Wm(A.YX(s,"fontSize"),l,A.cg(s.h(0,"fontFamily")),B.Ek[o],B.js[n],A.YX(s,"letterSpacing"),A.YX(s,"wordSpacing"),A.YX(s,"lineHeight")))
 break
 case"TextInput.clearClient":p=B.A4
 break
@@ -35795,7 +35795,7 @@ if(o>0)return s
 return null}}
 A.a9k.prototype={
 D(a,b){this.IS(b,0,b.length,!1)},
-bO(){this.IS(B.F0,0,0,!0)}}
+bO(){this.IS(B.F1,0,0,!0)}}
 A.agJ.prototype={
 IS(a,b,c,d){var s=this.b.adS(a,b,c,d)
 if(s!=null)this.a.nY(s,0,s.length,d)}}
@@ -37696,11 +37696,11 @@ break A}r=A.ml(A.od(this.c.toUpperCase(),p,p,p,A.a9(a).ok.r,p,p),p,p)
 q=A.kc(60,60)
 return new A.tL(r,new A.f7(s,p,new A.de(n,n,n,n),p,p,p,B.bR),q,B.Ad,o,p,p)}}
 A.vF.prototype={
-ah(){var s=A.akx(B.EQ[B.Aj.ahd(5)])
+ah(){var s=A.akx(B.EP[B.Aj.ahd(15)])
 return new A.An(new A.XR(s,A.bh(5,new A.iu(A.bh(5,B.wV,!1,t.E_)),!1,t.Tc)))}}
 A.An.prototype={
 a9i(a){var s=B.d.iU(a).toLowerCase()
-if(!B.b.v(B.Fu,A.akx(s).k(0))){this.c.av(t.Pu).f.Uu(B.M5)
+if(!B.b.v(B.Ed,A.akx(s).k(0))){this.c.av(t.Pu).f.Uu(B.M5)
 return}this.ak(new A.abB(this,s))},
 N(a){var s,r,q,p,o,n,m=null,l=t.J,k=A.d([],l)
 for(s=t.G6,r=new A.oo(this.d.d,s),r=new A.bg(r,r.gE(0),s.j("bg<aB.E>")),s=s.j("aB.E");r.q();){q=r.d
@@ -38894,7 +38894,7 @@ r=A.qk(B.I2,B.h,r==null?1:r)
 r.toString
 q=p.a7(q.gp())
 if(q==null)q=1
-return A.apI(A.aoP(null,B.Q,new A.q6(q,B.EE,new A.cI(B.z2,this.e)),s,1,B.LS),r)}}
+return A.apI(A.aoP(null,B.Q,new A.q6(q,B.EF,new A.cI(B.z2,this.e)),s,1,B.LS),r)}}
 A.CS.prototype={
 l(){var s=this,r=s.bz$
 if(r!=null)r.J(s.ghK())
@@ -41994,7 +41994,7 @@ Zw(a){var s,r=this,q=null,p=r.a
 p=p.e
 s=r.ga5h()
 r.a.toString
-return new A.zt(q,q,q,new A.acy(),q,q,q,q,q,p,B.Hg,q,q,q,B.F7,r.ga5o(),"",q,B.P7,B.fR,q,s,q,q,B.n_,!1,!1,q,q,q,new A.mS(r,t.bT))},
+return new A.zt(q,q,q,new A.acy(),q,q,q,q,q,p,B.Hg,q,q,q,B.F8,r.ga5o(),"",q,B.P7,B.fR,q,s,q,q,B.n_,!1,!1,q,q,q,new A.mS(r,t.bT))},
 N(a){var s,r=this.Zw(a)
 this.a.toString
 s=this.d
@@ -42094,7 +42094,7 @@ A.rz.prototype={
 G(){return"_CornerId."+this.b}}
 A.jS.prototype={}
 A.q8.prototype={
-jO(){var s,r,q,p=this,o=A.aDb(B.ES,new A.a0S(p,p.b.gaQ().S(0,p.a.gaQ()))),n=p.a
+jO(){var s,r,q,p=this,o=A.aDb(B.ET,new A.a0S(p,p.b.gaQ().S(0,p.a.gaQ()))),n=p.a
 n.toString
 s=o.a
 r=p.nv(n,s)
@@ -45473,7 +45473,7 @@ r.f=s.d},
 $S:0}
 A.GI.prototype={
 N(a){var s=this.c.P(0,new A.f(0,40.95))
-return A.aoP(A.Up(null,B.Br,!0),B.af,new A.q6(1,B.Fi,new A.cI(B.z0,B.q)),s,1.25,B.LT)}}
+return A.aoP(A.Up(null,B.Br,!0),B.af,new A.q6(1,B.Fj,new A.cI(B.z0,B.q)),s,1.25,B.LT)}}
 A.nf.prototype={
 G(){return"MaterialType."+this.b}}
 A.wr.prototype={
@@ -45838,7 +45838,7 @@ $3(a,b,c){return new A.lQ(b,this.a,!1,c,null)},
 $S:102}
 A.Hg.prototype={
 Z5(a){var s=t.Tr
-s=A.a_(new A.a4(B.ER,new A.a21(a),s),s.j("am.E"))
+s=A.a_(new A.a4(B.ES,new A.a21(a),s),s.j("am.E"))
 return s},
 i(a,b){if(b==null)return!1
 if(this===b)return!0
@@ -50062,7 +50062,7 @@ return new A.kv(r.a.cX(s.ghw()),r.b,r.c)},
 cq(a){var s=this.b
 return s.a.c.cq(a.S(0,s.ghw()))},
 o5(){var s,r,q=this.b,p=q.ghw()
-if(!isFinite(p.a)||!isFinite(p.b))return B.F1
+if(!isFinite(p.a)||!isFinite(p.b))return B.F2
 s=q.f
 if(s==null){s=q.a.c.o5()
 q.f=s}if(p.i(0,B.h))r=s
@@ -57933,7 +57933,7 @@ break
 case 1:return A.O(q,r)}})
 return A.P($async$AD,r)},
 a10(a,b){var s,r,q,p
-if(a===b)return B.F6
+if(a===b)return B.F7
 s=A.d([],t.QP)
 if(a==null)s.push(b)
 else{r=B.b.kh(B.e2,a)
@@ -59947,7 +59947,7 @@ A.jo.prototype={}
 A.HB.prototype={
 kk(a,b){var s,r,q,p,o,n=$.V.a6$.d.c
 if(n==null||n.e==null)return!1
-for(s=t.r,r=0;r<2;++r){q=B.EY[r]
+for(s=t.r,r=0;r<2;++r){q=B.EZ[r]
 p=n.e
 p.toString
 o=A.aiN(p,q,s)
@@ -61700,7 +61700,7 @@ q.aY()
 q.bJ$.D(0,s.ga5X())
 s.e=q}return q},
 gKR(){var s=this.f
-return s===$?this.f=new A.aaT(1,B.Ei,B.bf):s},
+return s===$?this.f=new A.aaT(1,B.Ej,B.bf):s},
 geN(){var s=this.z
 s=s==null?null:$.bE().d===s
 return s===!0},
@@ -62394,7 +62394,7 @@ h.Ch()
 r=h.ga1E()
 q=q.r2
 h.e!==$&&A.aU()
-h.e=new A.IC(s,new A.bZ(B.H1,l),new A.nb(),p,B.bH,0,k,h.ga3E(),h.ga3G(),r,B.bH,0,j,h.ga3y(),h.ga3A(),r,i,B.F3,f,g.CW,g.cx,g.cy,o,g,n,m,g.x,q,new A.EI(),new A.EI())
+h.e=new A.IC(s,new A.bZ(B.H1,l),new A.nb(),p,B.bH,0,k,h.ga3E(),h.ga3G(),r,B.bH,0,j,h.ga3y(),h.ga3A(),r,i,B.F4,f,g.CW,g.cx,g.cy,o,g,n,m,g.x,q,new A.EI(),new A.EI())
 return h},
 tQ(a,b){var s,r,q,p=this,o=p.a.c,n=o.a.a.length
 if(n<a.b||n<a.a)return
@@ -65795,7 +65795,7 @@ i(a,b){var s=this
 if(b==null)return!1
 if(J.H(b)!==A.m(s))return!1
 return b instanceof A.pT&&b.a===s.a&&b.b==s.b&&b.d===s.d&&A.c7(null,null)},
-gt(a){return A.E(this.a,this.b,null,this.d,A.bb(B.Fa),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
+gt(a){return A.E(this.a,this.b,null,this.d,A.bb(B.Fb),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 k(a){return"IconData(U+"+B.d.xq(B.j.n1(this.a,16).toUpperCase(),5,"0")+")"}}
 A.vO.prototype={
 ce(a){return!this.w.i(0,a.w)},
@@ -66640,7 +66640,7 @@ b=r?a1:a3.fr
 if(b==null)b=a2.b.c.z
 a3=r?a1:a3.fx
 if(a3==null)a3=a2.b.c.Q
-a=new A.wy(a4,s,q,p,m,o,n,a5,g===!0,a6,a7,i,h,l,k,j,f,new A.pF(a1),B.F4,e===!0,d,c,b,a3,A.axT(a2))
+a=new A.wy(a4,s,q,p,m,o,n,a5,g===!0,a6,a7,i,h,l,k,j,f,new A.pF(a1),B.F5,e===!0,d,c,b,a3,A.axT(a2))
 if(!a.i(0,a0.e))a0.ak(new A.acP(a0,a))},
 Py(){if(this.d==null)this.nU()},
 Dp(){this.nU()},
@@ -66953,7 +66953,7 @@ r.T(0,s.SO(null,l))
 l.a.toString
 q=r.a
 p=0
-for(;!1;++p){o=B.F8[p]
+for(;!1;++p){o=B.F9[p]
 n=l.c
 n.toString
 m=new A.fx(o.Dc(n),null,!0,B.kV,B.bw,new A.oS(new ($.SE())(B.bw)),B.bw)
@@ -67298,7 +67298,7 @@ N(a){var s,r,q=this,p=null,o=q.ga3c(),n=A.ks(a),m=q.bq$,l=q.d
 l===$&&A.a()
 s=q.a.ay
 if(l.gI()==null){r=q.gHY()
-r=J.kD(r.slice(0),A.Z(r).c)}else r=B.F9
+r=J.kD(r.slice(0),A.Z(r).c)}else r=B.Fa
 return new A.mV(p,new A.dK(new A.a1C(q,a),A.wi(B.bm,new A.DH(!1,A.ajq(A.pO(!0,p,A.JO(m,new A.ql(r,s,l)),p,p,p,q.y,!1,p,p,p,p,p,!0),n),p),o,q.ga5N(),p,p,o),p,t.w3),p)}}
 A.a1B.prototype={
 $1(a){var s=this.a.c
@@ -72145,7 +72145,7 @@ r.uU()
 return s.aS()},
 l(){var s,r,q,p,o=this
 for(s=o.b,r=s.length,q=o.gAF(),p=0;p<s.length;s.length===r||(0,A.t)(s),++p)s[p].J(q)
-o.b=B.F5
+o.b=B.F6
 o.y=!1
 o.cY()},
 dl(a,b){return a.lb(b)},
@@ -72592,7 +72592,7 @@ g.p2=A.p(t.D2,q)
 p=g.p1
 s=s.c
 g.p1=A.p(s,q)
-for(o=0;o<11;++o){n=B.Ev[o]
+for(o=0;o<11;++o){n=B.Ew[o]
 m=f.abP(n)
 l=m==null?null:m.a
 k=p.h(0,n)
@@ -78672,7 +78672,7 @@ B.Ac=new A.a8j()
 B.aa=new A.a8k()
 B.cf=new A.a8m()
 B.dn=new A.JX(0,0,0,0)
-B.F4=s([],A.an("w<aFP>"))
+B.F5=s([],A.an("w<aFP>"))
 B.Ue=new A.a8r()
 B.dA=new A.Kd()
 B.cK=new A.Ke()
@@ -79173,20 +79173,21 @@ B.mV=new A.wf(0,"opportunity")
 B.jr=new A.wf(2,"mandatory")
 B.mW=new A.wf(3,"endOfText")
 B.DA=new A.wh(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.ET=s([1373.2198709594231,-1100.4251190754821,-7.278681089101213],t.n)
-B.ED=s([-271.815969077903,559.6580465940733,-32.46047482791194],t.n)
+B.EU=s([1373.2198709594231,-1100.4251190754821,-7.278681089101213],t.n)
+B.EE=s([-271.815969077903,559.6580465940733,-32.46047482791194],t.n)
 B.Fz=s([1.9622899599665666,-57.173814538844006,308.7233197812385],t.n)
-B.DD=s([B.ET,B.ED,B.Fz],t.zg)
+B.DD=s([B.EU,B.EE,B.Fz],t.zg)
 B.mX=s(["text","multiline","number","phone","datetime","emailAddress","url","visiblePassword","name","address","none","webSearch","twitter"],t.s)
 B.E_=s([4,9,14,19],t.t)
 B.kW=new A.BB(0,"named")
 B.yJ=new A.BB(1,"anonymous")
 B.E9=s([B.kW,B.yJ],A.an("w<BB>"))
-B.EF=s([0.41233895,0.35762064,0.18051042],t.n)
-B.Eq=s([0.2126,0.7152,0.0722],t.n)
+B.EG=s([0.41233895,0.35762064,0.18051042],t.n)
+B.Er=s([0.2126,0.7152,0.0722],t.n)
 B.Fv=s([0.01932141,0.11916382,0.95034478],t.n)
-B.cl=s([B.EF,B.Eq,B.Fv],t.zg)
+B.cl=s([B.EG,B.Er,B.Fv],t.zg)
 B.mY=s([0,4,12,1,5,13,3,7,15],t.t)
+B.Ed=s(["peixe","copos","calca","harry","armas","livro","porta","noite","chuva","campo","pedra","festa","vento","carro","folha","peixe","copos","calca","harry","armas","livro","porta","noite","chuva","campo","pedra","festa","vento","carro","folha","balao","claro","dedos","exame","falar","gelos","horas","idade","jogos","limpo","menta","nuvem","olhos","ponto","quais","radio","sonho","terra","unico","velho"],t.s)
 B.Ta=new A.f0(0,1)
 B.Tf=new A.f0(0.5,1)
 B.Ti=new A.f0(0.5375,0.75)
@@ -79198,28 +79199,28 @@ B.Tj=new A.f0(0.8875,0.25)
 B.Th=new A.f0(0.925,0.5)
 B.Tb=new A.f0(0.9625,0.75)
 B.Tc=new A.f0(1,1)
-B.Ei=s([B.Ta,B.Tf,B.Ti,B.Tk,B.Tg,B.Te,B.Td,B.Tj,B.Th,B.Tb,B.Tc],A.an("w<f0>"))
+B.Ej=s([B.Ta,B.Tf,B.Ti,B.Tk,B.Tg,B.Te,B.Td,B.Tj,B.Th,B.Tb,B.Tc],A.an("w<f0>"))
 B.c2=new A.jC(0,"left")
 B.di=new A.jC(1,"right")
 B.hs=new A.jC(2,"center")
 B.ez=new A.jC(3,"justify")
 B.aH=new A.jC(4,"start")
 B.ht=new A.jC(5,"end")
-B.Ej=s([B.c2,B.di,B.hs,B.ez,B.aH,B.ht],A.an("w<jC>"))
-B.Et=s([2,1.13276676],t.n)
+B.Ek=s([B.c2,B.di,B.hs,B.ez,B.aH,B.ht],A.an("w<jC>"))
+B.Eu=s([2,1.13276676],t.n)
 B.DF=s([2.18349805,1.20311921],t.n)
-B.Ff=s([2.33888662,1.28698796],t.n)
-B.Fh=s([2.48660575,1.36351941],t.n)
-B.Em=s([2.62226596,1.44717976],t.n)
-B.Er=s([2.7514899,1.53385819],t.n)
-B.EO=s([3.36298265,1.98288283],t.n)
-B.Ew=s([4.08649929,2.23811846],t.n)
-B.EH=s([4.85481134,2.47563463],t.n)
-B.Ep=s([5.62945551,2.72948597],t.n)
-B.Eu=s([6.43023796,2.98020421],t.n)
-B.mZ=s([B.Et,B.DF,B.Ff,B.Fh,B.Em,B.Er,B.EO,B.Ew,B.EH,B.Ep,B.Eu],t.zg)
-B.El=s([B.i3,B.i4],A.an("w<tX>"))
-B.Eo=s([18,15,10,12,15,18,15,12,12],t.n)
+B.Fg=s([2.33888662,1.28698796],t.n)
+B.Fi=s([2.48660575,1.36351941],t.n)
+B.En=s([2.62226596,1.44717976],t.n)
+B.Es=s([2.7514899,1.53385819],t.n)
+B.EQ=s([3.36298265,1.98288283],t.n)
+B.Ex=s([4.08649929,2.23811846],t.n)
+B.EI=s([4.85481134,2.47563463],t.n)
+B.Eq=s([5.62945551,2.72948597],t.n)
+B.Ev=s([6.43023796,2.98020421],t.n)
+B.mZ=s([B.Eu,B.DF,B.Fg,B.Fi,B.En,B.Es,B.EQ,B.Ex,B.EI,B.Eq,B.Ev],t.zg)
+B.Em=s([B.i3,B.i4],A.an("w<tX>"))
+B.Ep=s([18,15,10,12,15,18,15,12,12],t.n)
 B.am=new A.dS(0,"icon")
 B.aE=new A.dS(1,"input")
 B.Y=new A.dS(2,"label")
@@ -79231,7 +79232,7 @@ B.ax=new A.dS(7,"suffixIcon")
 B.bh=new A.dS(8,"helperError")
 B.bi=new A.dS(9,"counter")
 B.c6=new A.dS(10,"container")
-B.Ev=s([B.am,B.aE,B.Y,B.aJ,B.aK,B.aL,B.V,B.ax,B.bh,B.bi,B.c6],A.an("w<dS>"))
+B.Ew=s([B.am,B.aE,B.Y,B.aJ,B.aK,B.aL,B.V,B.ax,B.bh,B.bi,B.c6],A.an("w<dS>"))
 B.FA=new A.n9("en",null,"US")
 B.n_=s([B.FA],t.ss)
 B.n0=s([0,41,61,101,131,181,251,301,360],t.n)
@@ -79247,22 +79248,22 @@ B.z_=new A.E3(2,"outer")
 B.lL=new A.z(0.09803921568627451,0,0,0,B.f)
 B.h=new A.f(0,0)
 B.ze=new A.ds(0.2,B.z_,B.lL,B.h,11)
-B.EE=s([B.ze],t.sq)
+B.EF=s([B.ze],t.sq)
 B.xS=new A.yy(0,"left")
 B.xT=new A.yy(1,"right")
-B.EG=s([B.xS,B.xT],A.an("w<yy>"))
+B.EH=s([B.xS,B.xT],A.an("w<yy>"))
 B.U=new A.yL(0,"upstream")
-B.EI=s([B.U,B.i],A.an("w<yL>"))
+B.EJ=s([B.U,B.i],A.an("w<yL>"))
 B.a8=new A.yP(0,"rtl")
 B.O=new A.yP(1,"ltr")
 B.js=s([B.a8,B.O],A.an("w<yP>"))
+B.EP=s(["peixe","copos","calca","harry","armas","livro","porta","noite","chuva","campo","pedra","festa","vento","carro","folha"],t.s)
 B.Ao=new A.mg(0,"auto")
 B.Ap=new A.mg(1,"full")
 B.Aq=new A.mg(2,"chromium")
-B.EP=s([B.Ao,B.Ap,B.Aq,B.bS],A.an("w<mg>"))
-B.EQ=s(["peixe","copos","cal\xe7a","harry","armas"],t.s)
+B.ER=s([B.Ao,B.Ap,B.Aq,B.bS],A.an("w<mg>"))
 B.be=new A.eZ(1,"fuchsia")
-B.ER=s([B.a7,B.be,B.B,B.aW,B.aw,B.aX],A.an("w<eZ>"))
+B.ES=s([B.a7,B.be,B.B,B.aW,B.aw,B.aX],A.an("w<eZ>"))
 B.ys=new A.rz(0,"topLeft")
 B.yv=new A.rz(3,"bottomRight")
 B.SV=new A.jS(B.ys,B.yv)
@@ -79271,42 +79272,42 @@ B.yt=new A.rz(1,"topRight")
 B.yu=new A.rz(2,"bottomLeft")
 B.SW=new A.jS(B.yt,B.yu)
 B.SX=new A.jS(B.yu,B.yt)
-B.ES=s([B.SV,B.SY,B.SW,B.SX],A.an("w<jS>"))
-B.EU=s([35,30,20,25,30,35,30,25,25],t.n)
-B.EX=s(["click","scroll"],t.s)
+B.ET=s([B.SV,B.SY,B.SW,B.SX],A.an("w<jS>"))
+B.EV=s([35,30,20,25,30,35,30,25,25],t.n)
+B.EY=s(["click","scroll"],t.s)
 B.zj=new A.p5()
 B.h8=new A.Iv(1,"page")
 B.h9=new A.dN(B.bu,B.h8)
-B.EY=s([B.zj,B.h9],A.an("w<aD>"))
-B.F6=s([],t.QP)
+B.EZ=s([B.zj,B.h9],A.an("w<aD>"))
+B.F7=s([],t.QP)
 B.n3=s([],A.an("w<aFw>"))
-B.Fc=s([],t.p)
-B.F2=s([],t.fJ)
-B.F1=s([],t.ER)
+B.Fd=s([],t.p)
+B.F3=s([],t.fJ)
+B.F2=s([],t.ER)
 B.Ul=s([],t.ss)
-B.F7=s([],t.tc)
+B.F8=s([],t.tc)
 B.fH=s([],t.jl)
-B.F9=s([],t.wi)
-B.F8=s([],A.an("w<aov<@>>"))
+B.Fa=s([],t.wi)
+B.F9=s([],A.an("w<aov<@>>"))
 B.jt=s([],t.AO)
-B.F5=s([],t.D1)
+B.F6=s([],t.D1)
 B.ju=s([],t.QF)
-B.Fb=s([],t.Lx)
-B.F3=s([],t.AS)
+B.Fc=s([],t.Lx)
+B.F4=s([],t.AS)
 B.Um=s([],t.J)
-B.F0=s([],t.t)
+B.F1=s([],t.t)
 B.n4=s([],t.ee)
-B.Fa=s([],t.XS)
+B.Fb=s([],t.XS)
 B.I0=new A.f(0,2)
 B.zd=new A.ds(0.75,B.eQ,B.lL,B.I0,1.5)
-B.Fi=s([B.zd],t.sq)
+B.Fj=s([B.zd],t.sq)
 B.e2=s([B.c8,B.bQ,B.eO,B.eP,B.i2],t.QP)
-B.Ed=s([0.001200833568784504,0.002389694492170889,0.0002795742885861124],t.n)
-B.EZ=s([0.0005891086651375999,0.0029785502573438758,0.0003270666104008398],t.n)
-B.En=s([0.00010146692491640572,0.0005364214359186694,0.0032979401770712076],t.n)
-B.Fp=s([B.Ed,B.EZ,B.En],t.zg)
-B.Fq=s([45,95,45,20,45,90,45,45,45],t.n)
-B.Fr=s([120,120,20,45,20,15,20,120,120],t.n)
+B.Ee=s([0.001200833568784504,0.002389694492170889,0.0002795742885861124],t.n)
+B.F_=s([0.0005891086651375999,0.0029785502573438758,0.0003270666104008398],t.n)
+B.Eo=s([0.00010146692491640572,0.0005364214359186694,0.0032979401770712076],t.n)
+B.Fq=s([B.Ee,B.F_,B.Eo],t.zg)
+B.Fr=s([45,95,45,20,45,90,45,45,45],t.n)
+B.Fs=s([120,120,20,45,20,15,20,120,120],t.n)
 B.d0=new A.fl(0,"controlModifier")
 B.d1=new A.fl(1,"shiftModifier")
 B.d2=new A.fl(2,"altModifier")
@@ -79318,7 +79319,6 @@ B.jS=new A.fl(7,"functionModifier")
 B.t9=new A.fl(8,"symbolModifier")
 B.n5=s([B.d0,B.d1,B.d2,B.d3,B.jP,B.jQ,B.jR,B.jS,B.t9],A.an("w<fl>"))
 B.jv=s([!0,!1],t.HZ)
-B.Fu=s(["peixe","copos","cal\xe7a","harry","armas","peixe","copos","cal\xe7a","harry","armas"],t.s)
 B.Fw=s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup","wheel"],t.s)
 B.jm=new A.eO(100)
 B.CX=new A.eO(200)
@@ -79885,57 +79885,57 @@ B.E4=s([54,null,null,8589935158],t.Z)
 B.E5=s([55,null,null,8589935159],t.Z)
 B.E6=s([56,null,null,8589935160],t.Z)
 B.E8=s([57,null,null,8589935161],t.Z)
-B.EJ=s([8589934852,8589934852,8589934853,null],t.Z)
+B.EK=s([8589934852,8589934852,8589934853,null],t.Z)
 B.DI=s([4294967555,null,4294967555,null],t.Z)
 B.DJ=s([4294968065,null,null,8589935154],t.Z)
 B.DK=s([4294968066,null,null,8589935156],t.Z)
 B.DL=s([4294968067,null,null,8589935158],t.Z)
 B.DM=s([4294968068,null,null,8589935160],t.Z)
 B.DR=s([4294968321,null,null,8589935157],t.Z)
-B.EK=s([8589934848,8589934848,8589934849,null],t.Z)
+B.EL=s([8589934848,8589934848,8589934849,null],t.Z)
 B.DH=s([4294967423,null,null,8589935150],t.Z)
 B.DN=s([4294968069,null,null,8589935153],t.Z)
 B.DG=s([4294967309,null,null,8589935117],t.Z)
 B.DO=s([4294968070,null,null,8589935159],t.Z)
 B.DS=s([4294968327,null,null,8589935152],t.Z)
-B.EL=s([8589934854,8589934854,8589934855,null],t.Z)
+B.EM=s([8589934854,8589934854,8589934855,null],t.Z)
 B.DP=s([4294968071,null,null,8589935155],t.Z)
 B.DQ=s([4294968072,null,null,8589935161],t.Z)
-B.EM=s([8589934850,8589934850,8589934851,null],t.Z)
-B.t5=new A.cC(["*",B.DT,"+",B.DU,"-",B.DV,".",B.DW,"/",B.DX,"0",B.DY,"1",B.DZ,"2",B.E0,"3",B.E1,"4",B.E2,"5",B.E3,"6",B.E4,"7",B.E5,"8",B.E6,"9",B.E8,"Alt",B.EJ,"AltGraph",B.DI,"ArrowDown",B.DJ,"ArrowLeft",B.DK,"ArrowRight",B.DL,"ArrowUp",B.DM,"Clear",B.DR,"Control",B.EK,"Delete",B.DH,"End",B.DN,"Enter",B.DG,"Home",B.DO,"Insert",B.DS,"Meta",B.EL,"PageDown",B.DP,"PageUp",B.DQ,"Shift",B.EM],A.an("cC<C,S<y?>>"))
+B.EN=s([8589934850,8589934850,8589934851,null],t.Z)
+B.t5=new A.cC(["*",B.DT,"+",B.DU,"-",B.DV,".",B.DW,"/",B.DX,"0",B.DY,"1",B.DZ,"2",B.E0,"3",B.E1,"4",B.E2,"5",B.E3,"6",B.E4,"7",B.E5,"8",B.E6,"9",B.E8,"Alt",B.EK,"AltGraph",B.DI,"ArrowDown",B.DJ,"ArrowLeft",B.DK,"ArrowRight",B.DL,"ArrowUp",B.DM,"Clear",B.DR,"Control",B.EL,"Delete",B.DH,"End",B.DN,"Enter",B.DG,"Home",B.DO,"Insert",B.DS,"Meta",B.EM,"PageDown",B.DP,"PageUp",B.DQ,"Shift",B.EN],A.an("cC<C,S<y?>>"))
 B.E7=s([B.nd,null,null,B.rU],t.L)
-B.Fd=s([B.rG,null,null,B.rV],t.L)
-B.Es=s([B.rH,null,null,B.rW],t.L)
-B.EN=s([B.rI,null,null,B.cq],t.L)
+B.Fe=s([B.rG,null,null,B.rV],t.L)
+B.Et=s([B.rH,null,null,B.rW],t.L)
+B.EO=s([B.rI,null,null,B.cq],t.L)
 B.DB=s([B.rJ,null,null,B.rX],t.L)
-B.Fn=s([B.rK,null,null,B.jF],t.L)
-B.Fm=s([B.rL,null,null,B.ec],t.L)
+B.Fo=s([B.rK,null,null,B.jF],t.L)
+B.Fn=s([B.rL,null,null,B.ec],t.L)
 B.Ec=s([B.rM,null,null,B.cr],t.L)
-B.Ft=s([B.rN,null,null,B.ed],t.L)
-B.Fl=s([B.rO,null,null,B.cs],t.L)
+B.Fu=s([B.rN,null,null,B.ed],t.L)
+B.Fm=s([B.rO,null,null,B.cs],t.L)
 B.Eb=s([B.rP,null,null,B.jG],t.L)
 B.DE=s([B.rQ,null,null,B.ct],t.L)
-B.Ek=s([B.rR,null,null,B.ee],t.L)
-B.Fe=s([B.rS,null,null,B.cu],t.L)
-B.Fg=s([B.rT,null,null,B.ef],t.L)
-B.Ee=s([B.ea,B.ea,B.fO,null],t.L)
-B.Fo=s([B.fK,null,B.fK,null],t.L)
-B.Ex=s([B.bo,null,null,B.cr],t.L)
-B.Ey=s([B.b9,null,null,B.cs],t.L)
-B.Ez=s([B.ba,null,null,B.ct],t.L)
-B.Fs=s([B.bp,null,null,B.cu],t.L)
-B.Fj=s([B.jz,null,null,B.jG],t.L)
-B.Ef=s([B.e9,B.e9,B.fN,null],t.L)
-B.EV=s([B.aA,null,null,B.cq],t.L)
-B.EA=s([B.cn,null,null,B.ec],t.L)
+B.El=s([B.rR,null,null,B.ee],t.L)
+B.Ff=s([B.rS,null,null,B.cu],t.L)
+B.Fh=s([B.rT,null,null,B.ef],t.L)
+B.Ef=s([B.ea,B.ea,B.fO,null],t.L)
+B.Fp=s([B.fK,null,B.fK,null],t.L)
+B.Ey=s([B.bo,null,null,B.cr],t.L)
+B.Ez=s([B.b9,null,null,B.cs],t.L)
+B.EA=s([B.ba,null,null,B.ct],t.L)
+B.Ft=s([B.bp,null,null,B.cu],t.L)
+B.Fk=s([B.jz,null,null,B.jG],t.L)
+B.Eg=s([B.e9,B.e9,B.fN,null],t.L)
+B.EW=s([B.aA,null,null,B.cq],t.L)
+B.EB=s([B.cn,null,null,B.ec],t.L)
 B.Ea=s([B.fJ,null,null,B.jE],t.L)
-B.EB=s([B.co,null,null,B.ee],t.L)
-B.Fk=s([B.e8,null,null,B.jF],t.L)
-B.Eg=s([B.eb,B.eb,B.fP,null],t.L)
-B.EC=s([B.e6,null,null,B.ed],t.L)
-B.F_=s([B.e7,null,null,B.ef],t.L)
-B.Eh=s([B.bX,B.bX,B.cp,null],t.L)
-B.Hi=new A.cC(["*",B.E7,"+",B.Fd,"-",B.Es,".",B.EN,"/",B.DB,"0",B.Fn,"1",B.Fm,"2",B.Ec,"3",B.Ft,"4",B.Fl,"5",B.Eb,"6",B.DE,"7",B.Ek,"8",B.Fe,"9",B.Fg,"Alt",B.Ee,"AltGraph",B.Fo,"ArrowDown",B.Ex,"ArrowLeft",B.Ey,"ArrowRight",B.Ez,"ArrowUp",B.Fs,"Clear",B.Fj,"Control",B.Ef,"Delete",B.EV,"End",B.EA,"Enter",B.Ea,"Home",B.EB,"Insert",B.Fk,"Meta",B.Eg,"PageDown",B.EC,"PageUp",B.F_,"Shift",B.Eh],A.an("cC<C,S<e?>>"))
+B.EC=s([B.co,null,null,B.ee],t.L)
+B.Fl=s([B.e8,null,null,B.jF],t.L)
+B.Eh=s([B.eb,B.eb,B.fP,null],t.L)
+B.ED=s([B.e6,null,null,B.ed],t.L)
+B.F0=s([B.e7,null,null,B.ef],t.L)
+B.Ei=s([B.bX,B.bX,B.cp,null],t.L)
+B.Hi=new A.cC(["*",B.E7,"+",B.Fe,"-",B.Et,".",B.EO,"/",B.DB,"0",B.Fo,"1",B.Fn,"2",B.Ec,"3",B.Fu,"4",B.Fm,"5",B.Eb,"6",B.DE,"7",B.El,"8",B.Ff,"9",B.Fh,"Alt",B.Ef,"AltGraph",B.Fp,"ArrowDown",B.Ey,"ArrowLeft",B.Ez,"ArrowRight",B.EA,"ArrowUp",B.Ft,"Clear",B.Fk,"Control",B.Eg,"Delete",B.EW,"End",B.EB,"Enter",B.Ea,"Home",B.EC,"Insert",B.Fl,"Meta",B.Eh,"PageDown",B.ED,"PageUp",B.F0,"Shift",B.Ei],A.an("cC<C,S<e?>>"))
 B.HU={KeyA:0,KeyB:1,KeyC:2,KeyD:3,KeyE:4,KeyF:5,KeyG:6,KeyH:7,KeyI:8,KeyJ:9,KeyK:10,KeyL:11,KeyM:12,KeyN:13,KeyO:14,KeyP:15,KeyQ:16,KeyR:17,KeyS:18,KeyT:19,KeyU:20,KeyV:21,KeyW:22,KeyX:23,KeyY:24,KeyZ:25,Digit1:26,Digit2:27,Digit3:28,Digit4:29,Digit5:30,Digit6:31,Digit7:32,Digit8:33,Digit9:34,Digit0:35,Minus:36,Equal:37,BracketLeft:38,BracketRight:39,Backslash:40,Semicolon:41,Quote:42,Backquote:43,Comma:44,Period:45,Slash:46}
 B.t6=new A.by(B.HU,["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","-","=","[","]","\\",";","'","`",",",".","/"],t.li)
 B.HR={Abort:0,Again:1,AltLeft:2,AltRight:3,ArrowDown:4,ArrowLeft:5,ArrowRight:6,ArrowUp:7,AudioVolumeDown:8,AudioVolumeMute:9,AudioVolumeUp:10,Backquote:11,Backslash:12,Backspace:13,BracketLeft:14,BracketRight:15,BrightnessDown:16,BrightnessUp:17,BrowserBack:18,BrowserFavorites:19,BrowserForward:20,BrowserHome:21,BrowserRefresh:22,BrowserSearch:23,BrowserStop:24,CapsLock:25,Comma:26,ContextMenu:27,ControlLeft:28,ControlRight:29,Convert:30,Copy:31,Cut:32,Delete:33,Digit0:34,Digit1:35,Digit2:36,Digit3:37,Digit4:38,Digit5:39,Digit6:40,Digit7:41,Digit8:42,Digit9:43,DisplayToggleIntExt:44,Eject:45,End:46,Enter:47,Equal:48,Escape:49,Esc:50,F1:51,F10:52,F11:53,F12:54,F13:55,F14:56,F15:57,F16:58,F17:59,F18:60,F19:61,F2:62,F20:63,F21:64,F22:65,F23:66,F24:67,F3:68,F4:69,F5:70,F6:71,F7:72,F8:73,F9:74,Find:75,Fn:76,FnLock:77,GameButton1:78,GameButton10:79,GameButton11:80,GameButton12:81,GameButton13:82,GameButton14:83,GameButton15:84,GameButton16:85,GameButton2:86,GameButton3:87,GameButton4:88,GameButton5:89,GameButton6:90,GameButton7:91,GameButton8:92,GameButton9:93,GameButtonA:94,GameButtonB:95,GameButtonC:96,GameButtonLeft1:97,GameButtonLeft2:98,GameButtonMode:99,GameButtonRight1:100,GameButtonRight2:101,GameButtonSelect:102,GameButtonStart:103,GameButtonThumbLeft:104,GameButtonThumbRight:105,GameButtonX:106,GameButtonY:107,GameButtonZ:108,Help:109,Home:110,Hyper:111,Insert:112,IntlBackslash:113,IntlRo:114,IntlYen:115,KanaMode:116,KeyA:117,KeyB:118,KeyC:119,KeyD:120,KeyE:121,KeyF:122,KeyG:123,KeyH:124,KeyI:125,KeyJ:126,KeyK:127,KeyL:128,KeyM:129,KeyN:130,KeyO:131,KeyP:132,KeyQ:133,KeyR:134,KeyS:135,KeyT:136,KeyU:137,KeyV:138,KeyW:139,KeyX:140,KeyY:141,KeyZ:142,KeyboardLayoutSelect:143,Lang1:144,Lang2:145,Lang3:146,Lang4:147,Lang5:148,LaunchApp1:149,LaunchApp2:150,LaunchAssistant:151,LaunchControlPanel:152,LaunchMail:153,LaunchScreenSaver:154,MailForward:155,MailReply:156,MailSend:157,MediaFastForward:158,MediaPause:159,MediaPlay:160,MediaPlayPause:161,MediaRecord:162,MediaRewind:163,MediaSelect:164,MediaStop:165,MediaTrackNext:166,MediaTrackPrevious:167,MetaLeft:168,MetaRight:169,MicrophoneMuteToggle:170,Minus:171,NonConvert:172,NumLock:173,Numpad0:174,Numpad1:175,Numpad2:176,Numpad3:177,Numpad4:178,Numpad5:179,Numpad6:180,Numpad7:181,Numpad8:182,Numpad9:183,NumpadAdd:184,NumpadBackspace:185,NumpadClear:186,NumpadClearEntry:187,NumpadComma:188,NumpadDecimal:189,NumpadDivide:190,NumpadEnter:191,NumpadEqual:192,NumpadMemoryAdd:193,NumpadMemoryClear:194,NumpadMemoryRecall:195,NumpadMemoryStore:196,NumpadMemorySubtract:197,NumpadMultiply:198,NumpadParenLeft:199,NumpadParenRight:200,NumpadSubtract:201,Open:202,PageDown:203,PageUp:204,Paste:205,Pause:206,Period:207,Power:208,PrintScreen:209,PrivacyScreenToggle:210,Props:211,Quote:212,Resume:213,ScrollLock:214,Select:215,SelectTask:216,Semicolon:217,ShiftLeft:218,ShiftRight:219,ShowAllWindows:220,Slash:221,Sleep:222,Space:223,Super:224,Suspend:225,Tab:226,Turbo:227,Undo:228,WakeUp:229,ZoomToggle:230}
@@ -80518,9 +80518,9 @@ B.xn=new A.e6([B.a6,B.aC,B.bs,B.aG,B.aU],t.Lu)
 B.Bi=new A.z(0.23529411764705882,0,0,0,B.f)
 B.I3=new A.f(0,4)
 B.zf=new A.ds(0.5,B.eQ,B.Bi,B.I3,10)
-B.EW=s([B.zf],t.sq)
+B.EX=s([B.zf],t.sq)
 B.K4=new A.ih(B.l8,B.q)
-B.KT=new A.ht(null,null,null,B.EW,B.K4)
+B.KT=new A.ht(null,null,null,B.EX,B.K4)
 B.KU=new A.a0(B.e8,!1,!0,!1,!1,B.l)
 B.xo=new A.a0(B.jx,!1,!1,!1,!0,B.l)
 B.KV=new A.a0(B.n8,!0,!1,!1,!1,B.l)
@@ -80619,7 +80619,7 @@ B.M2=new A.im(3,"hide")
 B.Uq=new A.im(4,"remove")
 B.M3=new A.im(5,"timeout")
 B.M4=new A.qP(null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.R9=new A.r1("Palavra inv\xe1lida. Tente outra de 5 letras.",null,null,null,null,null,null,null,null)
+B.R9=new A.r1("A palavra deve ter 5 letras e ser v\xe1lida.",null,null,null,null,null,null,null,null)
 B.Cm=new A.aR(4e6)
 B.M5=new A.o9(B.R9,null,null,null,null,null,null,null,null,null,null,null,null,B.Cm,!1,null,null,null,B.af,null)
 B.xN=new A.yr(0,"permissive")
