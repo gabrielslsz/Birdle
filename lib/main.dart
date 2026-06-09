@@ -53,6 +53,8 @@ class GuessInput extends StatelessWidget {
                       vertical: 12,
                     ),
                     counterText: '',
+                    counter:
+                        const SizedBox.shrink(), // Remove o espaço do contador
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(35)),
                       borderSide: BorderSide(color: Colors.pink.shade200),
@@ -101,9 +103,9 @@ class Tile extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         border: Border.all(color: Colors.pink.shade100, width: 2),
         color: switch (hitType) {
-          HitType.hit => Colors.green, // Verde para acerto total
-          HitType.partial => Colors.yellow, // Amarelo para "perto"
-          HitType.miss => Colors.red, // Vermelho para erro
+          HitType.hit => Colors.green,
+          HitType.partial => Colors.yellow,
+          HitType.miss => Colors.red,
           _ => Colors.white.withOpacity(0.9),
         },
         boxShadow: [
@@ -131,6 +133,121 @@ class Tile extends StatelessWidget {
   }
 }
 
+class VictoryPage extends StatelessWidget {
+  const VictoryPage({super.key, required this.onReset});
+
+  final VoidCallback onReset;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        width: double.infinity,
+        height: double.infinity,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [Colors.pink.shade50, Colors.white],
+          ),
+        ),
+        child: SafeArea(
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.symmetric(vertical: 20),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const SizedBox(height: 20),
+                Icon(Icons.favorite, color: Colors.pink, size: 60),
+                const SizedBox(height: 10),
+                Text(
+                  'Feliz Dia dos Namorados!',
+                  style: TextStyle(
+                    fontSize: 28,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.pink.shade700,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 20),
+                // Foto de vocês
+                Center(
+                  child: Container(
+                    constraints: const BoxConstraints(maxWidth: 320),
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black12,
+                          blurRadius: 10,
+                          spreadRadius: 2,
+                        ),
+                      ],
+                    ),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(15),
+                      child: Image.network(
+                        'imgs/brasil.jpeg',
+                        height: 260,
+                        fit: BoxFit.contain,
+                        errorBuilder: (context, error, stackTrace) {
+                          return Image.asset(
+                            'imgs/brasil.jpeg',
+                            height: 260,
+                            fit: BoxFit.contain,
+                            errorBuilder: (c, e, s) => Container(
+                              height: 260,
+                              child: const Icon(
+                                Icons.favorite,
+                                size: 50,
+                                color: Colors.pink,
+                              ),
+                            ),
+                          );
+                        },
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 30),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 40.0),
+                  child: Text(
+                    'Cada letra que você acertou é apenas um pedacinho de tudo que eu amo em você. Você é a melhor parte da minha vida!',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.pink.shade900,
+                      height: 1.5,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 40),
+                ElevatedButton.icon(
+                  onPressed: onReset,
+                  icon: const Icon(Icons.refresh),
+                  label: const Text('Jogar Novamente'),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.pink,
+                    foregroundColor: Colors.white,
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 30,
+                      vertical: 15,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 20),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 class GamePage extends StatefulWidget {
   const GamePage({super.key});
 
@@ -140,6 +257,7 @@ class GamePage extends StatefulWidget {
 
 class _GamePageState extends State<GamePage> {
   final Game _game = Game();
+  bool _showVictory = false;
 
   void _submitGuess(String guess) {
     final normalizedGuess = guess.trim().toLowerCase();
@@ -159,11 +277,31 @@ class _GamePageState extends State<GamePage> {
 
     setState(() {
       _game.guess(normalizedGuess);
+
+      // Verifica se ganhou
+      if (_game.didWin) {
+        Future.delayed(const Duration(milliseconds: 800), () {
+          setState(() {
+            _showVictory = true;
+          });
+        });
+      }
+    });
+  }
+
+  void _resetGame() {
+    setState(() {
+      _game.resetGame();
+      _showVictory = false;
     });
   }
 
   @override
   Widget build(BuildContext context) {
+    if (_showVictory) {
+      return VictoryPage(onReset: _resetGame);
+    }
+
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Column(

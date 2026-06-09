@@ -166,10 +166,16 @@ class Game {
   /// Evaluates [guess] against the hidden word,
   /// records the result in [guesses], and returns it.
   ///
-  /// For finer control, use [isLegalGuess] to validate input or
-  /// [matchGuessOnly] to evaluate without recording the result.
+  /// For this romantic version, if the guess is any of the 5 legal words,
+  /// it is treated as a perfect match (all green).
   Word guess(String guess) {
-    final result = matchGuessOnly(guess);
+    Word result;
+    if (legalWords.contains(guess.toLowerCase())) {
+      // Create a perfect match word
+      result = Word(guess.toLowerCase().split('').map((char) => (char: char, type: HitType.hit)).toList());
+    } else {
+      result = matchGuessOnly(guess);
+    }
     addGuessToList(result);
     return result;
   }
