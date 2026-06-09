@@ -215,7 +215,7 @@ class VictoryPage extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 40.0),
                   child: Text(
-                    'Cada letra que você acertou é apenas um pedacinho de tudo que eu amo em você. Você é a melhor parte da minha vida!',
+                    'Cada letra que você acertou é apenas um pedacinho de tudo que eu amo em você. Te amo muito! ❤️',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 18,
