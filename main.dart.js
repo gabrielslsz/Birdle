@@ -40225,7 +40225,7 @@ return new A.uR(p,new A.eg(s,o,new A.dq(m,m,m,m),n,r,o,B.be),q,B.AB,B.cY,o,o)}}
 A.LN.prototype={
 O(a){var s,r=null,q=A.d([B.iv,B.k],t.t_),p=A.HS(B.eb,B.d6,r,60),o=A.i1("Feliz Dia dos Namorados!",r,r,r,A.ed(r,r,B.ix,r,r,r,r,r,r,r,r,28,r,r,B.bF,r,r,!0,r,r,r,r,r,r,r,r),B.cF,r),n=A.va(20),m=A.d([new A.db(2,B.cO,B.iC,B.h,10)],t.sq)
 m=A.kP(A.qn(r,A.aqv(A.va(15),new A.ld(A.asX(r,r,new A.r8("imgs/brasil.jpeg",1,r,B.TZ)),new A.abA(),260,B.lp,r)),B.G,B.zx,new A.eg(B.k,r,r,n,m,r,B.be),r,r,r,B.Dl,r,r,r),r,r)
-n=A.i1("Cada letra que voc\xea acertou \xe9 apenas um pedacinho de tudo que eu amo em voc\xea. Voc\xea \xe9 a melhor parte da minha vida!",r,r,r,A.ed(r,r,B.fh,r,r,r,r,r,r,r,r,18,r,r,r,r,1.5,!0,r,r,r,r,r,r,r,r),B.cF,r)
+n=A.i1("Cada letra que voc\xea acertou \xe9 apenas um pedacinho de tudo que eu amo em voc\xea. Te amo muito! \u2764\ufe0f",r,r,r,A.ed(r,r,B.fh,r,r,r,r,r,r,r,r,18,r,r,r,r,1.5,!0,r,r,r,r,r,r,r,r),B.cF,r)
 s=A.aAX(r,r,B.d6,r,r,r,r,r,r,B.k,r,r,B.Du,r,r,r,r,r,r,r)
 return A.at0(A.qn(r,A.a7g(!0,new A.KH(B.Dk,A.WO(A.d([B.hH,p,B.Ne,o,B.hH,m,B.y4,new A.cv(B.mo,n,r),B.Nf,new A.GS(!0,this.c,r,r,r,s,B.G,r,!1,r,!0,r,new A.O2(B.Su,B.E1,s,r,r),r),B.hH],t.E),B.bB,B.eu,B.c6),r),!0),B.G,r,new A.eg(r,r,r,r,r,new A.nM(B.lh,B.id,B.cG,q,r,r),B.be),r,1/0,r,r,r,r,1/0))}}
 A.abA.prototype={
